@@ -47,24 +47,47 @@
 //     }
 // }
 
-public class day1 {
+// public class day1 {
+//     public static void main(String[] args) {
+
+//         int[] arr = {10, 15, 22, 31, 40, 53};
+
+//         int even = 0;
+//         int odd = 0;
+
+//         for (int i = 0; i < arr.length; i++) {
+
+//             if (arr[i] % 2 == 0) {
+//                 even++;
+//             } else {
+//                 odd++;
+//             }
+//         }
+
+//         System.out.println("Even numbers = " + even);
+//         System.out.println("Odd numbers = " + odd);
+//     }
+// }
+
+public class Main {
     public static void main(String[] args) {
 
-        int[] arr = {10, 15, 22, 31, 40, 53};
+        int[] arr = {10, 20, 30, 40, 50};
 
-        int even = 0;
-        int odd = 0;
+        boolean sorted = true;
 
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < arr.length - 1; i++) {
 
-            if (arr[i] % 2 == 0) {
-                even++;
-            } else {
-                odd++;
+            if (arr[i] > arr[i + 1]) {
+                sorted = false;
+                break;
             }
         }
 
-        System.out.println("Even numbers = " + even);
-        System.out.println("Odd numbers = " + odd);
+        if (sorted) {
+            System.out.println("Array is sorted");
+        } else {
+            System.out.println("Array is not sorted");
+        }
     }
 }
