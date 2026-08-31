@@ -92,26 +92,45 @@
 //     }
 // }
 
-public class day2 {
+// public class day2 {
+//     public static void main(String[] args) {
+
+//         int[] arr = {10, 25, 45, 30, 60};
+
+//         int largest = arr[0];
+//         int secondLargest = arr[0];
+
+//         for (int i = 1; i < arr.length; i++) {
+
+//             if (arr[i] > largest) {
+//                 secondLargest = largest;
+//                 largest = arr[i];
+//             } 
+//             else if (arr[i] > secondLargest && arr[i] != largest) {
+//                 secondLargest = arr[i];
+//             }
+//         }
+
+//         System.out.println("Largest = " + largest);
+//         System.out.println("Second Largest = " + secondLargest);
+//     }
+// }
+
+public class day3 {
     public static void main(String[] args) {
 
-        int[] arr = {10, 25, 45, 30, 60};
+        int[] arr = {10, 20, 10, 30, 10, 40};
 
-        int largest = arr[0];
-        int secondLargest = arr[0];
+        int target = 10;
+        int count = 0;
 
-        for (int i = 1; i < arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
 
-            if (arr[i] > largest) {
-                secondLargest = largest;
-                largest = arr[i];
-            } 
-            else if (arr[i] > secondLargest && arr[i] != largest) {
-                secondLargest = arr[i];
+            if (arr[i] == target) {
+                count++;
             }
         }
 
-        System.out.println("Largest = " + largest);
-        System.out.println("Second Largest = " + secondLargest);
+        System.out.println("Element " + target + " occurs " + count + " times");
     }
 }
