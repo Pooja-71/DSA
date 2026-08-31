@@ -116,21 +116,51 @@
 //     }
 // }
 
-public class day3 {
+// public class day3 {
+//     public static void main(String[] args) {
+
+//         int[] arr = {10, 20, 10, 30, 10, 40};
+
+//         int target = 10;
+//         int count = 0;
+
+//         for (int i = 0; i < arr.length; i++) {
+
+//             if (arr[i] == target) {
+//                 count++;
+//             }
+//         }
+
+//         System.out.println("Element " + target + " occurs " + count + " times");
+//     }
+// }
+
+public class day4 {
     public static void main(String[] args) {
 
-        int[] arr = {10, 20, 10, 30, 10, 40};
+        int[] arr = {10, 20, 30, 20, 40};
 
-        int target = 10;
-        int count = 0;
+        boolean duplicate = false;
 
         for (int i = 0; i < arr.length; i++) {
 
-            if (arr[i] == target) {
-                count++;
+            for (int j = i + 1; j < arr.length; j++) {
+
+                if (arr[i] == arr[j]) {
+                    duplicate = true;
+                    break;
+                }
+            }
+
+            if (duplicate) {
+                break;
             }
         }
 
-        System.out.println("Element " + target + " occurs " + count + " times");
+        if (duplicate) {
+            System.out.println("Array contains duplicate elements");
+        } else {
+            System.out.println("No duplicate elements");
+        }
     }
 }
