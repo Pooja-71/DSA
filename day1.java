@@ -166,22 +166,31 @@
 // }
 
 import java.util.*;
- public class day1 {
-    public static int prefixmaxarr(int arr[]){
-        int i,j,sum=0; 
+
+public class day1 {
+
+    public static int prefixmaxarr(int arr[]) {
+
+        int i, j, sum = 0;
         int n;
-        n=arr.length;
-        int prefixarr[]=new int[n];
-        for(i=0;i<=n;i++){
-            prefixarr[i]=arr[i]+prefixarr[i]
-          
+
+        n = arr.length;
+        int prefixarr[] = new int[n];
+
+        prefixarr[0] = arr[0];
+
+        for(i = 1; i < n; i++) {
+            prefixarr[i] = arr[i] + prefixarr[i-1];
         }
-        System.out.println(prefixarr);
+
+        System.out.println(Arrays.toString(prefixarr));
+
         return 0;
     }
-    public static void main(string args[]){
-        int arr[]={1,-2,6,-1,3};
-        prefixmaxarr(arr);
 
+    public static void main(String args[]) {
+        int arr[] = {1, -2, 6, -1, 3};
+
+        prefixmaxarr(arr);
     }
- }
+}
