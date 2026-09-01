@@ -165,32 +165,62 @@
 //     }
 // }
 
-import java.util.*;
+// import java.util.*;
+
+// public class day1 {
+
+//     public static int prefixmaxarr(int arr[]) {
+
+//         int i, j, sum = 0;
+//         int n;
+
+//         n = arr.length;
+//         int prefixarr[] = new int[n];
+
+//         prefixarr[0] = arr[0];
+
+//         for(i = 1; i < n; i++) {
+//             prefixarr[i] = arr[i] + prefixarr[i-1];
+//         }
+
+//         System.out.println(Arrays.toString(prefixarr));
+
+//         return 0;
+//     }
+
+//     public static void main(String args[]) {
+//         int arr[] = {1, -2, 6, -1, 3};
+
+//         prefixmaxarr(arr);
+//     }
+// }
 
 public class day1 {
+    public static void main(String[] args) {
 
-    public static int prefixmaxarr(int arr[]) {
+        int[] arr = {10, 20, 30, 20, 40};
 
-        int i, j, sum = 0;
-        int n;
+        boolean duplicate = false;
 
-        n = arr.length;
-        int prefixarr[] = new int[n];
+        for (int i = 0; i < arr.length; i++) {
 
-        prefixarr[0] = arr[0];
+            for (int j = i+1; j < arr.length; j++) {
 
-        for(i = 1; i < n; i++) {
-            prefixarr[i] = arr[i] + prefixarr[i-1];
+                if (arr[i] == arr[j]) {
+                    duplicate = true;
+                    break;
+                }
+            }
+
+            if (duplicate) {
+                break;
+            }
         }
 
-        System.out.println(Arrays.toString(prefixarr));
-
-        return 0;
-    }
-
-    public static void main(String args[]) {
-        int arr[] = {1, -2, 6, -1, 3};
-
-        prefixmaxarr(arr);
+        if (duplicate) {
+            System.out.println("Array contains duplicate elements");
+        } else {
+            System.out.println("No duplicate elements");
+        }
     }
 }
