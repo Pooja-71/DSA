@@ -166,7 +166,7 @@
 // }
 
 import java.util.*;
- public class day10 {
+ public class day1 {
     public static int prefixmaxarr(int arr[]){
         int i,j,sum=0; 
         int n;
