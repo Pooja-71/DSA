@@ -195,32 +195,47 @@
 //     }
 // }
 
+// public class day1 {
+//     public static void main(String[] args) {
+
+//         int[] arr = {10, 20, 30, 20, 40};
+
+//         boolean duplicate = false;
+
+//         for (int i = 0; i < arr.length; i++) {
+
+//             for (int j = i+1; j < arr.length; j++) {
+
+//                 if (arr[i] == arr[j]) {
+//                     duplicate = true;
+//                     break;
+//                 }
+//             }
+
+//             if (duplicate) {
+//                 break;
+//             }
+//         }
+
+//         if (duplicate) {
+//             System.out.println("Array contains duplicate elements");
+//         } else {
+//             System.out.println("No duplicate elements");
+//         }
+//     }
+// }
 public class day1 {
     public static void main(String[] args) {
 
-        int[] arr = {10, 20, 30, 20, 40};
+        int num = 12345;
+        int reverse = 0;
 
-        boolean duplicate = false;
-
-        for (int i = 0; i < arr.length; i++) {
-
-            for (int j = i+1; j < arr.length; j++) {
-
-                if (arr[i] == arr[j]) {
-                    duplicate = true;
-                    break;
-                }
-            }
-
-            if (duplicate) {
-                break;
-            }
+        while (num != 0) {
+            int digit = num % 10;
+            reverse = reverse * 10 + digit;
+            num = num / 10;
         }
 
-        if (duplicate) {
-            System.out.println("Array contains duplicate elements");
-        } else {
-            System.out.println("No duplicate elements");
-        }
+        System.out.println("Reverse = " + reverse);
     }
 }
