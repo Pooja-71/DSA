@@ -293,19 +293,52 @@
 //     }
 // }
 
-class Solution {
-    public int day1(int[] nums, int val) {
-        int k=0;
+// class day1 {
+//     public int removelement(int[] nums, int val) {
+//         int k=0;
     
-        for(int i=0;i<nums.length;i++){
-            if (nums[i]==val){
+//         for(int i=0;i<nums.length;i++){
+//             if (nums[i]==val){
+//                 continue;
+//             }
+//             else {
+//                 nums[k]=nums[i];
+//                 k++;
+//             }
+//         }
+//         return k;
+//     }
+// }
+
+
+import java.util.Arrays;
+
+class day1 {
+
+    public int removeDuplicates(int[] nums) {
+        int count = 0;
+
+        for (int i = 0; i < nums.length; i++) {
+            if (i < nums.length - 1 && nums[i] == nums[i + 1]) {
                 continue;
-            }
-            else {
-                nums[k]=nums[i];
-                k++;
+            } else {
+                nums[count] = nums[i];
+                count++;
             }
         }
-        return k;
+
+        return count;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {1, 1, 2, 2, 3};
+
+        removing_duplicate obj = new removing_duplicate();
+
+        int count = obj.removeDuplicates(nums);
+
+        System.out.println("Number of unique elements: " + count);
+        System.out.println("Modified array: " +
+                Arrays.toString(Arrays.copyOf(nums, count)));
     }
 }
