@@ -261,34 +261,51 @@
 //     }
 // }
 
-public class day1 {
-    public static void main(String[] args) {
+// public class day1 {
+//     public static void main(String[] args) {
 
-        int[] arr = {10, 20, 10, 30, 20, 10};
+//         int[] arr = {10, 20, 10, 30, 20, 10};
 
-        for (int i = 0; i < arr.length; i++) {
+//         for (int i = 0; i < arr.length; i++) {
 
-            boolean alreadyCounted = false;
+//             boolean alreadyCounted = false;
 
-            for (int j = 0; j < i; j++) {
-                if (arr[i] == arr[j]) {
-                    alreadyCounted = true;
-                    break;
-                }
+//             for (int j = 0; j < i; j++) {
+//                 if (arr[i] == arr[j]) {
+//                     alreadyCounted = true;
+//                     break;
+//                 }
+//             }
+
+//             if (!alreadyCounted) {
+
+//                 int count = 0;
+
+//                 for (int j = 0; j < arr.length; j++) {
+//                     if (arr[i] == arr[j]) {
+//                         count++;
+//                     }
+//                 }
+
+//                 System.out.println(arr[i] + " occurs " + count + " times");
+//             }
+//         }
+//     }
+// }
+
+class Solution {
+    public int day1(int[] nums, int val) {
+        int k=0;
+    
+        for(int i=0;i<nums.length;i++){
+            if (nums[i]==val){
+                continue;
             }
-
-            if (!alreadyCounted) {
-
-                int count = 0;
-
-                for (int j = 0; j < arr.length; j++) {
-                    if (arr[i] == arr[j]) {
-                        count++;
-                    }
-                }
-
-                System.out.println(arr[i] + " occurs " + count + " times");
+            else {
+                nums[k]=nums[i];
+                k++;
             }
         }
+        return k;
     }
 }
