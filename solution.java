@@ -342,3 +342,27 @@ class day1 {
                 Arrays.toString(Arrays.copyOf(nums, count)));
     }
 }
+
+class Solution {
+    public boolean isPalindrome(int x) {
+        int o=x;
+        int dx=0;
+        if(x<0){
+            return false;
+        }
+        while(x!=0){
+            int r=x%10;
+            dx=dx*10 + r;
+            x=x/10;
+        }
+        if (o==dx){
+             return true;
+        }
+        else{
+             return false;
+        }
+       
+    }
+
+
+}
