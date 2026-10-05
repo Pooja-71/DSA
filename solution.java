@@ -474,40 +474,22 @@ class Solution {
     public int maxProfit(int[] prices) {
 
         int smallest = prices[0];
+        int profit = 0;
 
         for (int i = 1; i < prices.length; i++) {
+
             if (prices[i] < smallest) {
                 smallest = prices[i];
             }
-        }
 
-        int indexs = 0;
+            int currentProfit = prices[i] - smallest;
 
-        for (int i = 0; i < prices.length; i++) {
-            if (prices[i] == smallest) {
-                indexs = i;
-                break;
+            if (currentProfit > profit) {
+                profit = currentProfit;
             }
         }
 
-        if (indexs == prices.length - 1) {
-            return 0;
-        }
-
-        int greatest = prices[indexs + 1];
-
-        for (int j = indexs + 2; j < prices.length; j++) {
-            if (prices[j] > greatest) {
-                greatest = prices[j];
-            }
-        }
-
-        int profit = greatest - smallest;
-
-        if (profit > 0) {
-            return profit;
-        }
-
-        return 0;
+        return profit;
     }
 }
+  
