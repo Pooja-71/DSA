@@ -1,820 +1,822 @@
-// public class Main {
-//     public static void main(String[] args) {
-//         System.out.println("Hello, DSA!");
-//     }
-// }
+// // public class Main {
+// //     public static void main(String[] args) {
+// //         System.out.println("Hello, DSA!");
+// //     }
+// // }
 
-// public class day1 {
-//     public static void main(String[] args) {
+// // public class day1 {
+// //     public static void main(String[] args) {
 
-//         int[] arr = {10, 20, 30, 40, 50};
+// //         int[] arr = {10, 20, 30, 40, 50};
 
-//         for (int i = 0; i < arr.length; i++) {
-//             System.out.println(arr[i]);
-//         }
-//     }
-// }
+// //         for (int i = 0; i < arr.length; i++) {
+// //             System.out.println(arr[i]);
+// //         }
+// //     }
+// // }
 
-// public class day1 {
-//     public static void main(String[] args) {
+// // public class day1 {
+// //     public static void main(String[] args) {
 
-//         int[] arr = {10, 45, 23, 67, 12};
+// //         int[] arr = {10, 45, 23, 67, 12};
 
-//         int max = arr[0];
+// //         int max = arr[0];
 
-//         for (int i = 1; i < arr.length; i++) {
-//             if (arr[i] > max) {
-//                 max = arr[i];
-//             }
-//         }
+// //         for (int i = 1; i < arr.length; i++) {
+// //             if (arr[i] > max) {
+// //                 max = arr[i];
+// //             }
+// //         }
 
-//         System.out.println("Largest = " + max);
-//     }
-// }
+// //         System.out.println("Largest = " + max);
+// //     }
+// // }
 
-// public class day1 {
-//     public static void main(String[] args) {
+// // public class day1 {
+// //     public static void main(String[] args) {
 
-//         int[] arr = {10, 20, 30, 40, 50};
+// //         int[] arr = {10, 20, 30, 40, 50};
 
-//         int sum = 0;
+// //         int sum = 0;
 
-//         for (int i = 0; i < arr.length; i++) {
-//             sum = sum + arr[i];
-//         }
+// //         for (int i = 0; i < arr.length; i++) {
+// //             sum = sum + arr[i];
+// //         }
 
-//         System.out.println("Sum = " + sum);
-//     }
-// }
+// //         System.out.println("Sum = " + sum);
+// //     }
+// // }
 
-// public class day1 {
-//     public static void main(String[] args) {
+// // public class day1 {
+// //     public static void main(String[] args) {
 
-//         int[] arr = {10, 15, 22, 31, 40, 53};
+// //         int[] arr = {10, 15, 22, 31, 40, 53};
 
-//         int even = 0;
-//         int odd = 0;
+// //         int even = 0;
+// //         int odd = 0;
 
-//         for (int i = 0; i < arr.length; i++) {
+// //         for (int i = 0; i < arr.length; i++) {
 
-//             if (arr[i] % 2 == 0) {
-//                 even++;
-//             } else {
-//                 odd++;
-//             }
-//         }
+// //             if (arr[i] % 2 == 0) {
+// //                 even++;
+// //             } else {
+// //                 odd++;
+// //             }
+// //         }
 
-//         System.out.println("Even numbers = " + even);
-//         System.out.println("Odd numbers = " + odd);
-//     }
-// }
+// //         System.out.println("Even numbers = " + even);
+// //         System.out.println("Odd numbers = " + odd);
+// //     }
+// // }
 
-// public class Main {
-//     public static void main(String[] args) {
+// // public class Main {
+// //     public static void main(String[] args) {
 
-//         int[] arr = {10, 20, 30, 40, 50};
+// //         int[] arr = {10, 20, 30, 40, 50};
 
-//         boolean sorted = true;
+// //         boolean sorted = true;
 
-//         for (int i = 0; i < arr.length - 1; i++) {
+// //         for (int i = 0; i < arr.length - 1; i++) {
 
-//             if (arr[i] > arr[i + 1]) {
-//                 sorted = false;
-//                 break;
-//             }
-//         }
+// //             if (arr[i] > arr[i + 1]) {
+// //                 sorted = false;
+// //                 break;
+// //             }
+// //         }
 
-//         if (sorted) {
-//             System.out.println("Array is sorted");
-//         } else {
-//             System.out.println("Array is not sorted");
-//         }
-//     }
-// }
+// //         if (sorted) {
+// //             System.out.println("Array is sorted");
+// //         } else {
+// //             System.out.println("Array is not sorted");
+// //         }
+// //     }
+// // }
 
-// public class day2 {
-//     public static void main(String[] args) {
+// // public class day2 {
+// //     public static void main(String[] args) {
 
-//         int[] arr = {10, 25, 45, 30, 60};
+// //         int[] arr = {10, 25, 45, 30, 60};
 
-//         int largest = arr[0];
-//         int secondLargest = arr[0];
+// //         int largest = arr[0];
+// //         int secondLargest = arr[0];
 
-//         for (int i = 1; i < arr.length; i++) {
+// //         for (int i = 1; i < arr.length; i++) {
 
-//             if (arr[i] > largest) {
-//                 secondLargest = largest;
-//                 largest = arr[i];
-//             } 
-//             else if (arr[i] > secondLargest && arr[i] != largest) {
-//                 secondLargest = arr[i];
-//             }
-//         }
+// //             if (arr[i] > largest) {
+// //                 secondLargest = largest;
+// //                 largest = arr[i];
+// //             } 
+// //             else if (arr[i] > secondLargest && arr[i] != largest) {
+// //                 secondLargest = arr[i];
+// //             }
+// //         }
 
-//         System.out.println("Largest = " + largest);
-//         System.out.println("Second Largest = " + secondLargest);
-//     }
-// }
+// //         System.out.println("Largest = " + largest);
+// //         System.out.println("Second Largest = " + secondLargest);
+// //     }
+// // }
 
-// public class day3 {
-//     public static void main(String[] args) {
+// // public class day3 {
+// //     public static void main(String[] args) {
 
-//         int[] arr = {10, 20, 10, 30, 10, 40};
+// //         int[] arr = {10, 20, 10, 30, 10, 40};
 
-//         int target = 10;
+// //         int target = 10;
+// //         int count = 0;
+
+// //         for (int i = 0; i < arr.length; i++) {
+
+// //             if (arr[i] == target) {
+// //                 count++;
+// //             }
+// //         }
+
+// //         System.out.println("Element " + target + " occurs " + count + " times");
+// //     }
+// // }
+
+// // public class day1 {
+// //     public static void main(String[] args) {
+
+// //         int[] arr = {10, 20, 30, 20, 40};
+
+// //         boolean duplicate = false;
+
+// //         for (int i = 0; i < arr.length; i++) {
+
+// //             for (int j = i+1; j < arr.length; j++) {
+
+// //                 if (arr[i] == arr[j]) {
+// //                     duplicate = true;
+// //                     break;
+// //                 }
+// //             }
+
+// //             if (duplicate) {
+// //                 break;
+// //             }
+// //         }
+
+// //         if (duplicate) {
+// //             System.out.println("Array contains duplicate elements");
+// //         } else {
+// //             System.out.println("No duplicate elements");
+// //         }
+// //     }
+// // }
+
+// // import java.util.*;
+
+// // public class day1 {
+
+// //     public static int prefixmaxarr(int arr[]) {
+
+// //         int i, j, sum = 0;
+// //         int n;
+
+// //         n = arr.length;
+// //         int prefixarr[] = new int[n];
+
+// //         prefixarr[0] = arr[0];
+
+// //         for(i = 1; i < n; i++) {
+// //             prefixarr[i] = arr[i] + prefixarr[i-1];
+// //         }
+
+// //         System.out.println(Arrays.toString(prefixarr));
+
+// //         return 0;
+// //     }
+
+// //     public static void main(String args[]) {
+// //         int arr[] = {1, -2, 6, -1, 3};
+
+// //         prefixmaxarr(arr);
+// //     }
+// // }
+
+// // public class day1 {
+// //     public static void main(String[] args) {
+
+// //         int[] arr = {10, 20, 30, 20, 40};
+
+// //         boolean duplicate = false;
+
+// //         for (int i = 0; i < arr.length; i++) {
+
+// //             for (int j = i+1; j < arr.length; j++) {
+
+// //                 if (arr[i] == arr[j]) {
+// //                     duplicate = true;
+// //                     break;
+// //                 }
+// //             }
+
+// //             if (duplicate) {
+// //                 break;
+// //             }
+// //         }
+
+// //         if (duplicate) {
+// //             System.out.println("Array contains duplicate elements");
+// //         } else {
+// //             System.out.println("No duplicate elements");
+// //         }
+// //     }
+// // }
+// // public class day1 {
+// //     public static void main(String[] args) {
+
+// //         int num = 12345;
+// //         int reverse = 0;
+
+// //         while (num != 0) {
+// //             int digit = num % 10;
+// //             reverse = reverse * 10 + digit;
+// //             num = num / 10;
+// //         }
+
+// //         System.out.println("Reverse = " + reverse);
+// //     }
+// // }
+
+// // public class day1 {
+// //     public static void main(String[] args) {
+
+// //         int num = 121;
+// //         int original = num;
+// //         int reverse = 0;
+
+// //         while (num != 0) {
+// //             int digit = num % 10;
+// //             reverse = reverse * 10 + digit;
+// //             num = num / 10;
+// //         }
+
+// //         if (original == reverse) {
+// //             System.out.println("Palindrome");
+// //         } else {
+// //             System.out.println("Not Palindrome");
+// //         }
+// //     }
+// // }
+
+// // public class day1 {
+// //     public static void main(String[] args) {
+
+// //         int[] arr = {10, 20, 10, 30, 20, 10};
+
+// //         for (int i = 0; i < arr.length; i++) {
+
+// //             boolean alreadyCounted = false;
+
+// //             for (int j = 0; j < i; j++) {
+// //                 if (arr[i] == arr[j]) {
+// //                     alreadyCounted = true;
+// //                     break;
+// //                 }
+// //             }
+
+// //             if (!alreadyCounted) {
+
+// //                 int count = 0;
+
+// //                 for (int j = 0; j < arr.length; j++) {
+// //                     if (arr[i] == arr[j]) {
+// //                         count++;
+// //                     }
+// //                 }
+
+// //                 System.out.println(arr[i] + " occurs " + count + " times");
+// //             }
+// //         }
+// //     }
+// // }
+
+// // class day1 {
+// //     public int removelement(int[] nums, int val) {
+// //         int k=0;
+    
+// //         for(int i=0;i<nums.length;i++){
+// //             if (nums[i]==val){
+// //                 continue;
+// //             }
+// //             else {
+// //                 nums[k]=nums[i];
+// //                 k++;
+// //             }
+// //         }
+// //         return k;
+// //     }
+// // }
+
+
+// import java.util.Arrays;
+
+// class day1 {
+
+//     public int removeDuplicates(int[] nums) {
 //         int count = 0;
 
-//         for (int i = 0; i < arr.length; i++) {
-
-//             if (arr[i] == target) {
+//         for (int i = 0; i < nums.length; i++) {
+//             if (i < nums.length - 1 && nums[i] == nums[i + 1]) {
+//                 continue;
+//             } else {
+//                 nums[count] = nums[i];
 //                 count++;
 //             }
 //         }
 
-//         System.out.println("Element " + target + " occurs " + count + " times");
+//         return count;
+//     }
+
+//     public static void main(String[] args) {
+//         int[] nums = {1, 1, 2, 2, 3};
+
+//         removing_duplicate obj = new removing_duplicate();
+
+//         int count = obj.removeDuplicates(nums);
+
+//         System.out.println("Number of unique elements: " + count);
+//         System.out.println("Modified array: " +
+//                 Arrays.toString(Arrays.copyOf(nums, count)));
 //     }
 // }
 
-// public class day1 {
-//     public static void main(String[] args) {
+// class Solution {
+//     public boolean isPalindrome(int x) {
+//         int o=x;
+//         int dx=0;
+//         if(x<0){
+//             return false;
+//         }
+//         while(x!=0){
+//             int r=x%10;
+//             dx=dx*10 + r;
+//             x=x/10;
+//         }
+//         if (o==dx){
+//              return true;
+//         }
+//         else{
+//              return false;
+//         }
+       
+//     }
 
-//         int[] arr = {10, 20, 30, 20, 40};
 
-//         boolean duplicate = false;
+// }
 
-//         for (int i = 0; i < arr.length; i++) {
+// class Solution {
+//     public int lengthOfLastWord(String s) {
+//         int count = 0;
 
-//             for (int j = i+1; j < arr.length; j++) {
+//         for(int i = s.length() - 1; i >= 0; i--) {
 
-//                 if (arr[i] == arr[j]) {
-//                     duplicate = true;
-//                     break;
+//             if(s.charAt(i) == ' ' && count > 0) {
+//                 break;
+//             }
+//             else {
+//                 if(s.charAt(i) != ' ') {
+//                     count++;
+//                 }
+//             }
+//         }
+
+//         return count;
+//     }
+// }
+
+// class Solution {
+//     public int mySqrt(int x) {
+
+//         int low = 1;
+//         int high = x;
+//         int ans = 0;
+
+//         while(low <= high) {
+
+//             int mid = low + (high - low) / 2;
+
+//             if((long)mid * mid <= x) {
+//                 ans = mid;
+//                 low = mid + 1;
+//             }
+//             else {
+//                 high = mid - 1;
+//             }
+//         }
+
+//         return ans;
+//     }
+// }
+
+// class Solution {
+//     public void merge(int[] nums1, int m, int[] nums2, int n) {
+
+//         for (int i = 0; i < n; i++) {
+//             nums1[m + i] = nums2[i];
+//         }
+
+//         for (int i = 0; i < nums1.length - 1; i++) {
+//             for (int j = 0; j < nums1.length - i - 1; j++) {
+
+//                 if (nums1[j] > nums1[j + 1]) {
+//                     int temp = nums1[j];
+//                     nums1[j] = nums1[j + 1];
+//                     nums1[j + 1] = temp;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// class Solution {
+//     public int[] plusOne(int[] digits) {
+
+//         for (int i = digits.length - 1; i >= 0; i--) {
+
+//             if (digits[i] < 9) {
+//                 digits[i]++;
+//                 return digits;
+//             }
+
+//             digits[i] = 0;
+//         }
+
+//         int[] result = new int[digits.length + 1];
+//         result[0] = 1;
+
+//         return result;
+//     }
+// }
+
+// class Solution {
+
+//     public int mySqrt(int x) {
+
+//         for (int i = 1; i <= x / i; i++) {
+
+//             if (i == x / i && i * i == x) {
+//                 return i;
+//             }
+
+//             if (i + 1 > x / (i + 1)) {
+//                 return i;
+//             }
+//         }
+
+//         return 0;
+//     }
+// }
+
+// class Solution {
+//     public int maxProfit(int[] prices) {
+
+//         int smallest = prices[0];
+//         int profit = 0;
+
+//         for (int i = 1; i < prices.length; i++) {
+
+//             if (prices[i] < smallest) {
+//                 smallest = prices[i];
+//             }
+
+//             int currentProfit = prices[i] - smallest;
+
+//             if (currentProfit > profit) {
+//                 profit = currentProfit;
+//             }
+//         }
+
+//         return profit;
+//     }
+// }
+
+// class Solution {
+//     public int majorityElement(int[] nums) {
+
+//         int candidate = nums[0];
+//         int count = 1;
+
+//         for (int i = 1; i < nums.length; i++) {
+
+//             if (nums[i] == candidate) {
+//                 count++;
+//             } else {
+//                 count--;
+//             }
+
+//             if (count == 0) {
+//                 candidate = nums[i];
+//                 count = 1;
+//             }
+//         }
+
+//         return candidate;
+//     }
+// }
+
+// class Solution {
+//     public int majorityElement(int[] nums) {
+
+//         for (int i = 0; i < nums.length; i++) {
+
+//             int count = 0;
+
+//             for (int j = 0; j < nums.length; j++) {
+
+//                 if (nums[i] == nums[j]) {
+//                     count++;
 //                 }
 //             }
 
-//             if (duplicate) {
-//                 break;
+//             if (count > nums.length / 2) {
+//                 return nums[i];
 //             }
 //         }
 
-//         if (duplicate) {
-//             System.out.println("Array contains duplicate elements");
-//         } else {
-//             System.out.println("No duplicate elements");
+//         return 0;
+//     }
+// }
+
+// class Solution {
+//     public boolean containsDuplicate(int[] nums) {
+
+//         HashSet<Integer> set = new HashSet<>();
+
+//         for (int i = 0; i < nums.length; i++) {
+
+//             if (set.contains(nums[i])) {
+//                 return true;
+//             }
+
+//             set.add(nums[i]);
 //         }
+
+//         return false;
+//     }
+// }
+
+// class Solution {
+//     public int missingNumber(int[] nums) {
+
+//         int n = nums.length;
+//         int sum = 0;
+
+//         for (int i = 0; i < nums.length; i++) {
+//             sum = sum + nums[i];
+//         }
+
+//         int total = n * (n + 1) / 2;
+
+//         return total - sum;
 //     }
 // }
 
 // import java.util.*;
 
-// public class day1 {
+// class Solution {
+//     public List<Integer> findDisappearedNumbers(int[] nums) {
 
-//     public static int prefixmaxarr(int arr[]) {
+//         List<Integer> result = new ArrayList<>();
 
-//         int i, j, sum = 0;
-//         int n;
+//         for (int i = 0; i < nums.length; i++) {
+//             int index = Math.abs(nums[i]) - 1;
 
-//         n = arr.length;
-//         int prefixarr[] = new int[n];
-
-//         prefixarr[0] = arr[0];
-
-//         for(i = 1; i < n; i++) {
-//             prefixarr[i] = arr[i] + prefixarr[i-1];
+//             if (nums[index] > 0) {
+//                 nums[index] = -nums[index];
+//             }
 //         }
 
-//         System.out.println(Arrays.toString(prefixarr));
+//         for (int i = 0; i < nums.length; i++) {
+//             if (nums[i] > 0) {
+//                 result.add(i + 1);
+//             }
+//         }
 
-//         return 0;
-//     }
-
-//     public static void main(String args[]) {
-//         int arr[] = {1, -2, 6, -1, 3};
-
-//         prefixmaxarr(arr);
+//         return result;
 //     }
 // }
 
-// public class day1 {
-//     public static void main(String[] args) {
-
-//         int[] arr = {10, 20, 30, 20, 40};
-
-//         boolean duplicate = false;
-
-//         for (int i = 0; i < arr.length; i++) {
-
-//             for (int j = i+1; j < arr.length; j++) {
-
-//                 if (arr[i] == arr[j]) {
-//                     duplicate = true;
-//                     break;
+// class Solution {
+//     public List<List<Integer>> generate(int numRows) {
+//         List<List<Integer>> result = new ArrayList<>();
+//         for(int i=0;i< numRows;i++){
+//             List<Integer> row =new ArrayList<>();
+//             for(int j=0;j<=i;j++){
+//                 if(j==0||j==i){
+//                     row.add(1);
+//                 }
+//                 else{
+//                     row.add(result.get(i-1).get(j-1)+ result.get(i-1).get(j));
 //                 }
 //             }
-
-//             if (duplicate) {
-//                 break;
-//             }
+//             result.add(row);
 //         }
-
-//         if (duplicate) {
-//             System.out.println("Array contains duplicate elements");
-//         } else {
-//             System.out.println("No duplicate elements");
-//         }
-//     }
-// }
-// public class day1 {
-//     public static void main(String[] args) {
-
-//         int num = 12345;
-//         int reverse = 0;
-
-//         while (num != 0) {
-//             int digit = num % 10;
-//             reverse = reverse * 10 + digit;
-//             num = num / 10;
-//         }
-
-//         System.out.println("Reverse = " + reverse);
+//       return result;  
 //     }
 // }
 
-// public class day1 {
-//     public static void main(String[] args) {
+// class Solution {
+//     public int thirdMax(int[] nums) {
 
-//         int num = 121;
-//         int original = num;
-//         int reverse = 0;
+//         long first = Long.MIN_VALUE;
+//         long second = Long.MIN_VALUE;
+//         long third = Long.MIN_VALUE;
 
-//         while (num != 0) {
-//             int digit = num % 10;
-//             reverse = reverse * 10 + digit;
-//             num = num / 10;
-//         }
+//         for (int i = 0; i < nums.length; i++) {
 
-//         if (original == reverse) {
-//             System.out.println("Palindrome");
-//         } else {
-//             System.out.println("Not Palindrome");
-//         }
-//     }
-// }
-
-// public class day1 {
-//     public static void main(String[] args) {
-
-//         int[] arr = {10, 20, 10, 30, 20, 10};
-
-//         for (int i = 0; i < arr.length; i++) {
-
-//             boolean alreadyCounted = false;
-
-//             for (int j = 0; j < i; j++) {
-//                 if (arr[i] == arr[j]) {
-//                     alreadyCounted = true;
-//                     break;
-//                 }
-//             }
-
-//             if (!alreadyCounted) {
-
-//                 int count = 0;
-
-//                 for (int j = 0; j < arr.length; j++) {
-//                     if (arr[i] == arr[j]) {
-//                         count++;
-//                     }
-//                 }
-
-//                 System.out.println(arr[i] + " occurs " + count + " times");
-//             }
-//         }
-//     }
-// }
-
-// class day1 {
-//     public int removelement(int[] nums, int val) {
-//         int k=0;
-    
-//         for(int i=0;i<nums.length;i++){
-//             if (nums[i]==val){
+//             if (nums[i] == first || nums[i] == second || nums[i] == third) {
 //                 continue;
 //             }
-//             else {
-//                 nums[k]=nums[i];
-//                 k++;
+
+//             if (nums[i] > first) {
+//                 third = second;
+//                 second = first;
+//                 first = nums[i];
+//             } else if (nums[i] > second) {
+//                 third = second;
+//                 second = nums[i];
+//             } else if (nums[i] > third) {
+//                 third = nums[i];
 //             }
 //         }
-//         return k;
+
+//         if (third == Long.MIN_VALUE) {
+//             return (int) first;
+//         }
+
+//         return (int) third;
+//     }
+// }
+
+// class Solution {
+//     public List<Integer> getRow(int rowIndex) {
+//         List<Integer> result= new ArrayList<>();
+//         result.add(1);
+//         for(int i=1;i<=rowIndex;i++){
+//             for(int j=result.size()-1;j>0;j--){
+//                 result.set(j,result.get(j)+result.get(j-1));
+//             }
+//             result.add(1);
+//         }
+//        return result; 
+//     }
+// }
+
+// import java.util.*;
+
+// class Solution {
+//     public boolean containsNearbyDuplicate(int[] nums, int k) {
+
+//         HashSet<Integer> set = new HashSet<>();
+
+//         for (int i = 0; i < nums.length; i++) {
+
+//             if (set.contains(nums[i])) {
+//                 return true;
+//             }
+
+//             set.add(nums[i]);
+
+//             if (set.size() > k) {
+//                 set.remove(nums[i - k]);
+//             }
+//         }
+
+//         return false;
+//     }
+// }
+
+// class Solution {
+//     public boolean isAnagram(String s, String t) {
+//         if(s.length() != t.length()){
+//             return false;
+//         }
+//         char[] a= s.toCharArray();
+//         char[] b= t.toCharArray();
+
+//         Arrays.sort(a);
+//         Arrays.sort(b);
+
+//         return Arrays.equals(a,b);
+//     }
+// }
+
+// class Solution {
+//     public char findTheDifference(String s, String t) {
+//         int sum=0;
+//         for(int i=0;i<s.length();i++){
+//             sum -= s.charAt(i);
+//         }
+//         for(int j=0;j<t.length();j++){
+//             sum += t.charAt(j);
+//         }
+//     return (char)sum; 
+//     }
+// }
+
+// import java.util.*;
+
+// class Solution {
+//     public List<String> summaryRanges(int[] nums) {
+//         List<String> result = new ArrayList<>();
+
+//         int i = 0;
+
+//         while (i < nums.length) {
+//             int start = nums[i];
+
+//             while (i + 1 < nums.length && nums[i + 1] == nums[i] + 1) {
+//                 i++;
+//             }
+
+//             if (start == nums[i]) {
+//                 result.add("" + start);
+//             } else {
+//                 result.add(start + "->" + nums[i]);
+//             }
+
+//             i++;
+//         }
+
+//         return result;
+//     }
+// }
+
+// class NumArray {
+//     int[] nums;
+
+//     public NumArray(int[] nums) {
+//         this.nums = nums;
+//     }
+
+//     public int sumRange(int left, int right) {
+//         int sum = 0;
+
+//         for (int i = left; i <= right; i++) {
+//             sum += nums[i];
+//         }
+
+//         return sum;
+//     }
+// }
+
+// import java.util.*;
+
+// class Solution {
+//     public int[] intersection(int[] nums1, int[] nums2) {
+//         HashSet<Integer> set = new HashSet<>();
+//         HashSet<Integer> result = new HashSet<>();
+
+//         for (int i = 0; i < nums1.length; i++) {
+//             set.add(nums1[i]);
+//         }
+
+//         for (int i = 0; i < nums2.length; i++) {
+//             if (set.contains(nums2[i])) {
+//                 result.add(nums2[i]);
+//             }
+//         }
+
+//         int[] ans = new int[result.size()];
+//         int i = 0;
+
+//         for (int num : result) {
+//             ans[i] = num;
+//             i++;
+//         }
+
+//         return ans;
+//     }
+// }
+
+// class Solution {
+//     public int[] intersect(int[] nums1, int[] nums2) {
+//         boolean[] used = new boolean[nums2.length];
+//         int[] temp = new int[nums1.length];
+//         int count = 0;
+
+//         for (int i = 0; i < nums1.length; i++) {
+//             for (int j = 0; j < nums2.length; j++) {
+//                 if (nums1[i] == nums2[j] && !used[j]) {
+//                     temp[count] = nums1[i];
+//                     count++;
+//                     used[j] = true;
+//                     break;
+//                 }
+//             }
+//         }
+
+//         int[] ans = new int[count];
+
+//         for (int i = 0; i < count; i++) {
+//             ans[i] = temp[i];
+//         }
+
+//         return ans;
 //     }
 // }
 
 
-import java.util.Arrays;
-
-class day1 {
-
-    public int removeDuplicates(int[] nums) {
-        int count = 0;
-
-        for (int i = 0; i < nums.length; i++) {
-            if (i < nums.length - 1 && nums[i] == nums[i + 1]) {
-                continue;
-            } else {
-                nums[count] = nums[i];
-                count++;
-            }
-        }
-
-        return count;
-    }
-
-    public static void main(String[] args) {
-        int[] nums = {1, 1, 2, 2, 3};
-
-        removing_duplicate obj = new removing_duplicate();
-
-        int count = obj.removeDuplicates(nums);
-
-        System.out.println("Number of unique elements: " + count);
-        System.out.println("Modified array: " +
-                Arrays.toString(Arrays.copyOf(nums, count)));
-    }
-}
-
-class Solution {
-    public boolean isPalindrome(int x) {
-        int o=x;
-        int dx=0;
-        if(x<0){
-            return false;
-        }
-        while(x!=0){
-            int r=x%10;
-            dx=dx*10 + r;
-            x=x/10;
-        }
-        if (o==dx){
-             return true;
-        }
-        else{
-             return false;
-        }
-       
-    }
-
-
-}
-
-class Solution {
-    public int lengthOfLastWord(String s) {
-        int count = 0;
-
-        for(int i = s.length() - 1; i >= 0; i--) {
-
-            if(s.charAt(i) == ' ' && count > 0) {
-                break;
-            }
-            else {
-                if(s.charAt(i) != ' ') {
-                    count++;
-                }
-            }
-        }
-
-        return count;
-    }
-}
-
-class Solution {
-    public int mySqrt(int x) {
-
-        int low = 1;
-        int high = x;
-        int ans = 0;
-
-        while(low <= high) {
-
-            int mid = low + (high - low) / 2;
-
-            if((long)mid * mid <= x) {
-                ans = mid;
-                low = mid + 1;
-            }
-            else {
-                high = mid - 1;
-            }
-        }
-
-        return ans;
-    }
-}
-
-class Solution {
-    public void merge(int[] nums1, int m, int[] nums2, int n) {
-
-        for (int i = 0; i < n; i++) {
-            nums1[m + i] = nums2[i];
-        }
-
-        for (int i = 0; i < nums1.length - 1; i++) {
-            for (int j = 0; j < nums1.length - i - 1; j++) {
-
-                if (nums1[j] > nums1[j + 1]) {
-                    int temp = nums1[j];
-                    nums1[j] = nums1[j + 1];
-                    nums1[j + 1] = temp;
-                }
-            }
-        }
-    }
-}
-
-class Solution {
-    public int[] plusOne(int[] digits) {
-
-        for (int i = digits.length - 1; i >= 0; i--) {
-
-            if (digits[i] < 9) {
-                digits[i]++;
-                return digits;
-            }
-
-            digits[i] = 0;
-        }
-
-        int[] result = new int[digits.length + 1];
-        result[0] = 1;
-
-        return result;
-    }
-}
-
-class Solution {
-
-    public int mySqrt(int x) {
-
-        for (int i = 1; i <= x / i; i++) {
-
-            if (i == x / i && i * i == x) {
-                return i;
-            }
-
-            if (i + 1 > x / (i + 1)) {
-                return i;
-            }
-        }
-
-        return 0;
-    }
-}
-
-class Solution {
-    public int maxProfit(int[] prices) {
-
-        int smallest = prices[0];
-        int profit = 0;
-
-        for (int i = 1; i < prices.length; i++) {
-
-            if (prices[i] < smallest) {
-                smallest = prices[i];
-            }
-
-            int currentProfit = prices[i] - smallest;
-
-            if (currentProfit > profit) {
-                profit = currentProfit;
-            }
-        }
-
-        return profit;
-    }
-}
-
-class Solution {
-    public int majorityElement(int[] nums) {
-
-        int candidate = nums[0];
-        int count = 1;
-
-        for (int i = 1; i < nums.length; i++) {
-
-            if (nums[i] == candidate) {
-                count++;
-            } else {
-                count--;
-            }
-
-            if (count == 0) {
-                candidate = nums[i];
-                count = 1;
-            }
-        }
-
-        return candidate;
-    }
-}
-
-class Solution {
-    public int majorityElement(int[] nums) {
-
-        for (int i = 0; i < nums.length; i++) {
-
-            int count = 0;
-
-            for (int j = 0; j < nums.length; j++) {
-
-                if (nums[i] == nums[j]) {
-                    count++;
-                }
-            }
-
-            if (count > nums.length / 2) {
-                return nums[i];
-            }
-        }
-
-        return 0;
-    }
-}
-
-class Solution {
-    public boolean containsDuplicate(int[] nums) {
-
-        HashSet<Integer> set = new HashSet<>();
-
-        for (int i = 0; i < nums.length; i++) {
-
-            if (set.contains(nums[i])) {
-                return true;
-            }
-
-            set.add(nums[i]);
-        }
-
-        return false;
-    }
-}
-
-class Solution {
-    public int missingNumber(int[] nums) {
-
-        int n = nums.length;
-        int sum = 0;
-
-        for (int i = 0; i < nums.length; i++) {
-            sum = sum + nums[i];
-        }
-
-        int total = n * (n + 1) / 2;
-
-        return total - sum;
-    }
-}
-
-import java.util.*;
-
-class Solution {
-    public List<Integer> findDisappearedNumbers(int[] nums) {
-
-        List<Integer> result = new ArrayList<>();
-
-        for (int i = 0; i < nums.length; i++) {
-            int index = Math.abs(nums[i]) - 1;
-
-            if (nums[index] > 0) {
-                nums[index] = -nums[index];
-            }
-        }
-
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] > 0) {
-                result.add(i + 1);
-            }
-        }
-
-        return result;
-    }
-}
-
-class Solution {
-    public List<List<Integer>> generate(int numRows) {
-        List<List<Integer>> result = new ArrayList<>();
-        for(int i=0;i< numRows;i++){
-            List<Integer> row =new ArrayList<>();
-            for(int j=0;j<=i;j++){
-                if(j==0||j==i){
-                    row.add(1);
-                }
-                else{
-                    row.add(result.get(i-1).get(j-1)+ result.get(i-1).get(j));
-                }
-            }
-            result.add(row);
-        }
-      return result;  
-    }
-}
-
-class Solution {
-    public int thirdMax(int[] nums) {
-
-        long first = Long.MIN_VALUE;
-        long second = Long.MIN_VALUE;
-        long third = Long.MIN_VALUE;
-
-        for (int i = 0; i < nums.length; i++) {
-
-            if (nums[i] == first || nums[i] == second || nums[i] == third) {
-                continue;
-            }
-
-            if (nums[i] > first) {
-                third = second;
-                second = first;
-                first = nums[i];
-            } else if (nums[i] > second) {
-                third = second;
-                second = nums[i];
-            } else if (nums[i] > third) {
-                third = nums[i];
-            }
-        }
-
-        if (third == Long.MIN_VALUE) {
-            return (int) first;
-        }
-
-        return (int) third;
-    }
-}
-
-class Solution {
-    public List<Integer> getRow(int rowIndex) {
-        List<Integer> result= new ArrayList<>();
-        result.add(1);
-        for(int i=1;i<=rowIndex;i++){
-            for(int j=result.size()-1;j>0;j--){
-                result.set(j,result.get(j)+result.get(j-1));
-            }
-            result.add(1);
-        }
-       return result; 
-    }
-}
-
-import java.util.*;
-
-class Solution {
-    public boolean containsNearbyDuplicate(int[] nums, int k) {
-
-        HashSet<Integer> set = new HashSet<>();
-
-        for (int i = 0; i < nums.length; i++) {
-
-            if (set.contains(nums[i])) {
-                return true;
-            }
-
-            set.add(nums[i]);
-
-            if (set.size() > k) {
-                set.remove(nums[i - k]);
-            }
-        }
-
-        return false;
-    }
-}
-
-class Solution {
-    public boolean isAnagram(String s, String t) {
-        if(s.length() != t.length()){
-            return false;
-        }
-        char[] a= s.toCharArray();
-        char[] b= t.toCharArray();
-
-        Arrays.sort(a);
-        Arrays.sort(b);
-
-        return Arrays.equals(a,b);
-    }
-}
-
-class Solution {
-    public char findTheDifference(String s, String t) {
-        int sum=0;
-        for(int i=0;i<s.length();i++){
-            sum -= s.charAt(i);
-        }
-        for(int j=0;j<t.length();j++){
-            sum += t.charAt(j);
-        }
-    return (char)sum; 
-    }
-}
-
-import java.util.*;
-
-class Solution {
-    public List<String> summaryRanges(int[] nums) {
-        List<String> result = new ArrayList<>();
-
-        int i = 0;
-
-        while (i < nums.length) {
-            int start = nums[i];
-
-            while (i + 1 < nums.length && nums[i + 1] == nums[i] + 1) {
-                i++;
-            }
-
-            if (start == nums[i]) {
-                result.add("" + start);
-            } else {
-                result.add(start + "->" + nums[i]);
-            }
-
-            i++;
-        }
-
-        return result;
-    }
-}
-
-class NumArray {
-    int[] nums;
-
-    public NumArray(int[] nums) {
-        this.nums = nums;
-    }
-
-    public int sumRange(int left, int right) {
-        int sum = 0;
-
-        for (int i = left; i <= right; i++) {
-            sum += nums[i];
-        }
-
-        return sum;
-    }
-}
-
-import java.util.*;
-
-class Solution {
-    public int[] intersection(int[] nums1, int[] nums2) {
-        HashSet<Integer> set = new HashSet<>();
-        HashSet<Integer> result = new HashSet<>();
-
-        for (int i = 0; i < nums1.length; i++) {
-            set.add(nums1[i]);
-        }
-
-        for (int i = 0; i < nums2.length; i++) {
-            if (set.contains(nums2[i])) {
-                result.add(nums2[i]);
-            }
-        }
-
-        int[] ans = new int[result.size()];
-        int i = 0;
-
-        for (int num : result) {
-            ans[i] = num;
-            i++;
-        }
-
-        return ans;
-    }
-}
-
-class Solution {
-    public int[] intersect(int[] nums1, int[] nums2) {
-        boolean[] used = new boolean[nums2.length];
-        int[] temp = new int[nums1.length];
-        int count = 0;
-
-        for (int i = 0; i < nums1.length; i++) {
-            for (int j = 0; j < nums2.length; j++) {
-                if (nums1[i] == nums2[j] && !used[j]) {
-                    temp[count] = nums1[i];
-                    count++;
-                    used[j] = true;
-                    break;
-                }
-            }
-        }
-
-        int[] ans = new int[count];
-
-        for (int i = 0; i < count; i++) {
-            ans[i] = temp[i];
-        }
-
-        return ans;
-    }
-}
